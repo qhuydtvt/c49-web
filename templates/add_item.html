@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add lingerie</title>
+</head>
+<body>
+    <form action="{{ url_for("add_lingerie") }}" method="post">
+
+        <p>Title</p>
+        <input type="text" name="title" required>
+
+        <p>Image Url</p>
+        <input type="text" name="image" required>
+
+        <p>Price</p>
+        <input type="number" name="price" required>
+
+        <p></p>
+        <input type="submit">
+    </form>
+</body>
+</html>
